@@ -31,6 +31,7 @@ function App() {
                 checkedIcon={false}
                 className={`switcher ${theme === 'light' ? 'unchecked' : 'checked'}`}
                 id='theme-switcher'
+                aria-checked={theme === 'light'} 
               />
           </div>
           </div>
