@@ -23,7 +23,7 @@ export const followers = [
 	  	icon: IconTwitter,
 	},
 	{
-		username:'@nathanf',
+		username:'@realnathanf',
 	  	followers:'11k',
 	  	kind:'followers',
 	  	analysis:'+1099',
@@ -31,7 +31,7 @@ export const followers = [
 	  	icon: IconInstagram,
 	},
 	{
-		username:'@nathanf',
+		username:'Nathan F.',
 	  	followers:'8239',
 	  	kind:'subscribers',
 	  	analysis:'-144',
