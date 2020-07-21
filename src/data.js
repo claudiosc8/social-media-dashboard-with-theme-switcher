@@ -56,7 +56,7 @@ export const overview = [
 	  	analysis:'-2%'
 	},
 	{
-		subject:'Page Views',
+		subject:'Likes',
 		social:'instagram',
 		icon: IconInstagram,
 	  	data:'5462',
