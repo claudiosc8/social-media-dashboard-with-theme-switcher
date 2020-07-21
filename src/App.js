@@ -23,7 +23,7 @@ function App() {
           </div>
           <div className='col'>
           <div className='switcher-wrapper'>
-              <label htmlFor='theme-switcher'>Dark mode</label>
+              <label htmlFor='theme-switcher'>Dark Mode</label>
               <Switch onChange={() => setTheme((t) => t === 'light' ? 'dark' : 'light')} checked={theme === 'light'} 
                 width={48} height={24} 
                 handleDiameter={18}
