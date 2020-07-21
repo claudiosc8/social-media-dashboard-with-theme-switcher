@@ -9,6 +9,7 @@ $Instagram: linear-gradient(90deg, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%
 $Light-Grayish-Blue: hsl(207, 33%, 95%);
 $Toggle-bg-light: hsl(230, 22%, 74%);
 $Toggle-bg-dark:linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+$Toggle-bg-empty:linear-gradient(90deg, hsla(210, 78%, 56%,0) 0%, hsla(146, 68%, 55%,0) 100%);
 $Dark-BG:hsl(230, 17%, 14%);
 $Dark-BG-Pattern:hsl(232, 19%, 15%);
 $Dark-Card-BG:hsl(228, 28%, 20%);
@@ -114,14 +115,17 @@ body:after {
     font-size:14px;
     font-weight: 700;
     margin-right: 12px;
+    cursor: pointer;
   }
   .switcher {
+    cursor: pointer;
     &.checked .react-switch-bg {
       background-image: $Toggle-bg-dark !important;
       background-color: hsl(210, 78%, 56%) !important;
     }
     &.unchecked .react-switch-bg {
       background-color: $Toggle-bg-light !important;
+      background-image: $Toggle-bg-empty !important;
     }
   }
 }
@@ -159,6 +163,7 @@ h2 {
   position:relative;
   margin-bottom:24px;
   transition: all 0.2s ease;
+  cursor: pointer;
   .card-row {
     display: flex;
   }
@@ -267,7 +272,23 @@ h2 {
 
 .dark {
   background-color:$Dark-BG;
-  .subheader, .switcher-wrapper span {
+  .switcher-wrapper {
+    &:hover {
+      span {
+        color:$Dark-Secondary-Text;
+      }
+      .react-switch-handle {
+        background-color:lighten($Dark-Card-BG, 10%) !important; 
+      }
+    }
+    .react-switch-handle {
+      background-color:$Dark-Card-BG !important; 
+    }
+    span {
+      color:$Dark-Primary-Text;
+    }
+  }
+  .subheader {
     color:$Dark-Primary-Text;
   }
   h1, h2 {
@@ -275,6 +296,9 @@ h2 {
   }
   .card {
     background-color: $Dark-Card-BG;
+    &:hover {
+      background-color: lighten($Dark-Card-BG, 10%);
+    }
     .username, .desc, .subject {
       color:$Dark-Primary-Text;
     }
@@ -286,6 +310,10 @@ h2 {
 
 .light {
   background-color:$Light-BG;
+  .switcher-wrapper:hover .react-switch-bg {
+      background-image: $Toggle-bg-dark !important;
+      background-color: hsl(210, 78%, 56%) !important;
+  }
   .subheader, .switcher-wrapper span {
     color:$Light-Primary-Text;
   }
@@ -294,6 +322,9 @@ h2 {
   }
   .card {
     background-color: $Light-Card-BG;
+    &:hover {
+      background-color: darken($Light-Card-BG, 5%);
+    }
     .username, .desc, .subject {
       color:$Light-Primary-Text;
     }

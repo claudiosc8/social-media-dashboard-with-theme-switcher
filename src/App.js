@@ -22,7 +22,7 @@ function App() {
               <div className='subheader'>Total Followers: {totalFollowers}</div>
           </div>
           <div className='col'>
-          <div className='switcher-wrapper'>
+          <label className='switcher-wrapper'>
               <span>Dark mode</span>
               <Switch onChange={() => setTheme((t) => t === 'light' ? 'dark' : 'light')} checked={theme === 'light'} 
                 width={48} height={24} 
@@ -31,7 +31,7 @@ function App() {
                 checkedIcon={false}
                 className={`switcher ${theme === 'light' ? 'unchecked' : 'checked'}`}
               />
-          </div>
+          </label>
           </div>
         </div>
         <div className='row' id={'social-media'}>
