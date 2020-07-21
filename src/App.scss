@@ -111,7 +111,7 @@ body:after {
   display: flex;
   justify-content: flex-end;
   align-items:center;
-  span {
+  label {
     font-size:14px;
     font-weight: 700;
     margin-right: 12px;
@@ -132,7 +132,7 @@ body:after {
 
 h1 {
   margin:0;
-  padding:10px 0 3px;
+  padding:1px 0 3px;
   font-size:28px;
   font-weight: 700;
 }
@@ -152,7 +152,7 @@ h2 {
 }
 
 .heading-section {
-  padding:24px 0;
+  padding:30px 0;
 
 }
 
@@ -274,7 +274,7 @@ h2 {
   background-color:$Dark-BG;
   .switcher-wrapper {
     &:hover {
-      span {
+      label {
         color:$Dark-Secondary-Text;
       }
       .react-switch-handle {
@@ -284,7 +284,7 @@ h2 {
     .react-switch-handle {
       background-color:$Dark-Card-BG !important; 
     }
-    span {
+    label {
       color:$Dark-Primary-Text;
     }
   }
@@ -314,7 +314,7 @@ h2 {
       background-image: $Toggle-bg-dark !important;
       background-color: hsl(210, 78%, 56%) !important;
   }
-  .subheader, .switcher-wrapper span {
+  .subheader, .switcher-wrapper label {
     color:$Light-Primary-Text;
   }
   h1, h2 {
