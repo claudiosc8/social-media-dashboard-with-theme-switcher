@@ -1,5 +1,7 @@
 # Frontend Mentor - Social media dashboard with theme switcher
 
+**Check the deployed app [here](https://social-media-dashboard-with-theme-switcher-lovat.vercel.app)**
+
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
