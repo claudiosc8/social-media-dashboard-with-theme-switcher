@@ -2,6 +2,8 @@
 
 **Check the deployed app [here](https://social-media-dashboard-with-theme-switcher-lovat.vercel.app)**
 
+**Check the report on Frontend Mentor [here](https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-using-react-8BSbAWk3B)**
+
 ![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
